@@ -11,12 +11,12 @@ public class ConectaMySQL {
 		try{
 			String url = "jdbc:mysql://localhost/agenda?useTimezone=true&serverTimezone=UTC";
 			String usuario = "root";
-			String senha = "Mtsa972106";
+			String senha = "senha do root";
 			conexao  = DriverManager.getConnection(url, usuario, senha);
 			System.out.println("Conectou");
 			conexao.close();
 		}catch(SQLException e){
-			System.out.println("Ocorreu um erro ao criar a conex„o. Erro: "+ e.getMessage());
+			System.out.println("Ocorreu um erro ao criar a conex√£o. Erro: "+ e.getMessage());
 		}
 		
 	}
